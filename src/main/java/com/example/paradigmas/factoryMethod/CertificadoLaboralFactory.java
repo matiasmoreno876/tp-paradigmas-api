@@ -5,7 +5,6 @@ import com.example.paradigmas.models.CertificadoLaboral;
 import com.example.paradigmas.models.Documento;
 import lombok.AllArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -14,8 +13,8 @@ public class CertificadoLaboralFactory extends DocumentoFactory {
     private final ICertificadoLaboralDao dao;
 
     @Override
-    public List<Documento> listar() {
-        return new ArrayList<>();
+    public List listar() {
+        return this.dao.findAll();
     }
 
     @Override

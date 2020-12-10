@@ -6,7 +6,7 @@ import java.util.List;
 
 public abstract class DocumentoFactory {
 
-    public abstract List<Documento> listar();
+    public abstract List listar();
 
     public abstract Documento crear();
 
