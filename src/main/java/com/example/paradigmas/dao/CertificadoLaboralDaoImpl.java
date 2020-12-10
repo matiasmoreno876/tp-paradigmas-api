@@ -7,7 +7,6 @@ import lombok.Data;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 @Data
@@ -23,6 +22,4 @@ public class CertificadoLaboralDaoImpl implements ICertificadoLaboralDao {
     public CertificadoLaboral save(CertificadoLaboral certificadoLaboral) {
         return this.repository.save(certificadoLaboral);
     }
-
-    //Methods
 }

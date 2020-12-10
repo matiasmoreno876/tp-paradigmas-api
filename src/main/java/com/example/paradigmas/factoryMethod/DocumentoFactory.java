@@ -1,10 +1,14 @@
 package com.example.paradigmas.factoryMethod;
 
+import com.example.paradigmas.models.Documento;
+
+import java.util.List;
+
 public abstract class DocumentoFactory {
 
-    public abstract void listar();
+    public abstract List<Documento> listar();
 
-    public abstract void crear();
+    public abstract Documento crear();
 
     public abstract void actualizar();
 
